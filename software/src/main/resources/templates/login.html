@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+  <title>software home page </title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .header {
+      height: 109px;
+      background: #bcd7f836;
+    }
+
+    .header h1 {
+      height: 52px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 42px;
+      margin: auto;
+      text-align: center;
+
+      color: #59b2ee;
+    }
+
+    .login-body {
+      width: 45%;
+      box-shadow: 0px 0px 5px black;
+      padding: 2em;
+      margin: 30px auto;
+    }
+
+    .logo {
+      width: 82%;
+      margin: 5px auto;
+    }
+
+    .login-message {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 2em;
+      line-height: 2.5em;
+      text-align: center;
+
+      color: #0B28BE;
+
+    }
+    .navbar-default {
+            background-color: #3b7bbc !important;
+            border-color: #e7e7e7;
+            color: #FFF !important;
+            font-family:Georgia;
+        }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+        <p class="navbar-brand">
+            <img src="/images/aauLogo.png" style="width: 40px; height: 40px;" alt="Logo Text" />
+            <img src="/images/logo1.png" alt="aau Logo" />
+        </p>
+        <div>
+            <h2>Wellcome to AAU clearance system</h2>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+  
+
+    <div class="main-content">
+      
+    </div>
+
+    <div class="row login-body">
+      <div class="row logo">
+        <img th:src="@{/images/logo.png}" class="img-fluid" alt="logo">
+      </div>
+
+      <div class="row">
+        <h1 class="login-message">Login into your Account</h1>
+      </div>
+
+      <div class="row">
+
+        <form class="signin_con d-grid gap-2 rounded-3 p-3" method="POST" th:action="@{/login}">
+          <div class="mb-2">
+            <label class="form-label" for="username">Username</label>
+            <input class="form-control form-control-md" type="text" id="username" name="username" />
+          </div>
+          <div class="mb-2">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-control form-control-md" type="password" id="password" name="password" />
+          </div>
+          <div th:if="${param.error}" style="color: red; font-size: 20px;">
+            <p><span>!</span> Invalid username or password.</p>
+          </div>
+          <div th:if="${param.logout}">
+            You have been logged out.
+          </div>
+
+          <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+
+      </div>
+
+
+    </div>
+  </div>
+
+</body>
+
+</html>
