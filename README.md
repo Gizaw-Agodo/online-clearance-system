@@ -1,2 +1,6 @@
 # online-clearance-system
-enabling asking and acquiring clearance online
+The Online Clearance System is a web-based application designed to streamline the clearance process for students. The system allows students to submit their clearance requests online, eliminating the need for manual paperwork. The system also provides administrators with an efficient way to manage the clearance process, including tracking requests, approving or denying requests, and generating reports. The system also provides students with an easy way to view their clearance status and any outstanding requirements. The system is designed to be secure and user-friendly, providing a convenient and efficient way for students to complete their clearance process.
+
+The outcome of online clearance system is to streamline the clearance process for students, making it easier and faster for them to complete the necessary paperwork and receive their clearance. This can include providing students with access to their academic records, verifying their identity, and ensuring that all necessary documents are submitted and approved. Additionally, an online clearance system can help to reduce the amount of paperwork and administrative tasks associated with the clearance process, allowing staff to focus on other tasks.
+
+# enabling asking and acquiring clearance online
